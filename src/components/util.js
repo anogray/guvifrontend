@@ -1,6 +1,6 @@
 const domainType = ()=>{
 
-    const backendUrl = "https://herokuapp.com";
+    const backendUrl = "https://guvibackendserver.herokuapp.com/";
     const __DEV__ = document.domain === 'localhost'
     const backDomain = __DEV__ ? "http://localhost:4000" : backendUrl;
     
