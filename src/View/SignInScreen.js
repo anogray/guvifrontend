@@ -50,7 +50,7 @@ if (isLoggedIn)
     onSubmit={(values, { setSubmitting, resetForm }) => {
                       setLoading(true);
                       setSubmitting(true);
-                        axios.post(`${backDomain}/api/user/login`, values)
+                        axios.post(`${backDomain}/api/user/login`,  values,{'Accept': 'application/json','Content-Type': 'application/json', 'Access-Control-Allow-Headers':"*"})
                             .then((res) => {
                                 resetForm();
                                 setSubmitting(false);
