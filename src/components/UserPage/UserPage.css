@@ -1,0 +1,62 @@
+.userpage-form{
+    margin-top: 3%;
+}
+.phone-number{
+    display: flex;
+    column-gap: 15px;
+}
+.phonecode{
+width: 20%;
+}
+.phonenumber{
+width: 82%;
+}
+
+.number{
+width: 50%;
+}
+
+.gender{
+    width: 50%;
+}
+.relation{
+    width: 50%;
+}
+
+.language{
+    width: 50%;
+}
+
+.selectmid{
+    display: flex;
+    column-gap: 50px;
+}
+
+.time-row{
+display: flex;
+}
+.time-btn{
+    margin-left: 15px;
+    width: 100px;
+    /* border: 1px solid #ced4da; */
+}
+
+.eachdob{
+    display: flex;
+    column-gap: 15px;
+}
+
+.eachtime{
+    display: flex;
+    column-gap: 15px;  
+    width: 50%;
+}
+
+.form-footer{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form-footer > div{
+    width: 50%;
+}

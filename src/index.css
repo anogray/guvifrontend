@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.menutab{
+  justify-content: center;
+}
+.tabrow{
+  margin-top: 4% !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+
+}
+.eachtab{
+  width: 50%;
+}
+
+
+.profile-tab{
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  height: 50px;
+  margin-top: 5%;
+}
+
+.feature-item{
+margin-top: 60px;
+}
+
+.feature-item > li{
+list-style: none;
+margin-bottom: 25px;
+text-align:center
+}
+
+.btn-prime{
+  background-color: #09D15E !important;
+border-color: #09D15E !important;
+margin-top:6%;
+margin-bottom:10%;
+}
+.signin{
+  text-align: center;
+}
+.signin-btn{
+background-color: #09D15E !important;
+border-color: #09D15E !important;
+}
+.account-btn{
+background-color: #09D15E !important;
+border-color: #09D15E !important;
+}
+.signin > button:first-child{
+margin-bottom: 2%;;
+}
+
+
+.loader-pos{
+  margin-top: 5%;
+  text-align: center;
+}
+.spinner-loader {
+  color:blue;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: -.125em;
+  border: .25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.footer-end{
+  margin-top: 80px !important;
+  margin-bottom: 25px !important;
+  text-align: center !important;
+  background-color:  #09D15E;
+ color:#ffffff;
+ margin-top:auto; 
+ padding: 0.5rem;
+ width:100%;
+ margin:auto;
+ border-radius: 10px;
+}
+
+.footer-content{
+display: flex;
+justify-content: center;
+}
