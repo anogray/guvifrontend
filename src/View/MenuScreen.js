@@ -11,8 +11,11 @@ export default function MenuScreen() {
 
   const { isLoggedIn, setLogin, setUser, setToken } = useContext(UserContext);
 
-  if (!isLoggedIn)
-          return (<Redirect to={{ pathname: '/', }} />)
+  if (!isLoggedIn){
+    
+    console.log("ppopop")
+            return (<Redirect to={{ pathname: '/', }} />)
+  }
 
   return (
 

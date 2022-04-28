@@ -50,8 +50,12 @@ if (isLoggedIn)
     onSubmit={(values, { setSubmitting, resetForm }) => {
                       setLoading(true);
                       setSubmitting(true);
-                        axios.post(`${backDomain}/api/user/login`,  values,{'Accept': 'application/json','Content-Type': 'application/json', 'Access-Control-Allow-Headers':"*"})
+                        axios.post(`${backDomain}/api/user/login`,  values,{'Accept': 'application/json','Content-Type': 'application/json', 'Access-Control-Allow-Headers':"*",validateStatus:false})
                             .then((res) => {
+                              console.log("see400",res)
+                              if(!res.data.success){
+                                 throw res.data.errorMessage;
+                              }
                                 resetForm();
                                 setSubmitting(false);
                                 setUser(res.data.name);
@@ -62,8 +66,8 @@ if (isLoggedIn)
                                 snackbar("notification", "logged in successfully");
                             })
                             .catch((error) => {
-                                if (error) {
-                                    snackbar("error", error.errorMessage);
+                                if (error) {console.log("seeeee",error)
+                                    snackbar("error", error);
                                     setSubmitting(false);
                                     setLoading(false);
                                 }
