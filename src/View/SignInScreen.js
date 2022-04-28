@@ -63,7 +63,7 @@ if (isLoggedIn)
                             })
                             .catch((error) => {
                                 if (error) {
-                                    snackbar("error", error.message);
+                                    snackbar("error", error.errorMessage);
                                     setSubmitting(false);
                                     setLoading(false);
                                 }
