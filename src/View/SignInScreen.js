@@ -53,7 +53,7 @@ if (isLoggedIn)
                         axios.post(`${backDomain}/api/user/login`,  values,{'Accept': 'application/json','Content-Type': 'application/json', 'Access-Control-Allow-Headers':"*",validateStatus:false})
                             .then((res) => {
                               console.log("see400",res)
-                              if(!res.data.success){
+                              if(!res.data.status){
                                  throw res.data.errorMessage;
                               }
                                 resetForm();
