@@ -63,7 +63,7 @@ if (isLoggedIn)
                             })
                             .catch((error) => {
                                 if (error) {
-                                    snackbar("error", "username or password incorrect");
+                                    snackbar("error", error.message);
                                     setSubmitting(false);
                                     setLoading(false);
                                 }
